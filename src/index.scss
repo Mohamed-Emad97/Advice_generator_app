@@ -1,0 +1,38 @@
+//Import File
+@use "./helpers/Variblies.scss" as *;
+
+//Rules
+body{
+    background-color: $Dark-Blue;
+    main{
+        .adviceCard{
+            background-color: $Dark-Grayish-Blue;
+            min-width: 375px;
+            max-width: 50%;
+            .id{
+                color: $Neon-Green;
+                font-weight: normal;
+            }
+            h2{
+                color: $Light-Cyan;
+                font-size: $Font-size;
+            }
+            .btnMain{
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                border: none;
+                outline: none;
+                background-color: $Neon-Green;
+                cursor: pointer;
+                transition: all 1s;
+                &:hover{
+                    box-shadow: 0 0 10px $Neon-Green, 0 0 40px $Neon-Green, 0 0 80px $Neon-Green;
+                }
+            }
+        }
+    }
+}
